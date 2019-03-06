@@ -1,0 +1,12 @@
+<%- include("header"); %>
+
+<h1>Välkommen till min blogg</h1>
+
+<% for (const row of res) { %>
+    <h2><%= row.title %></h2>
+    <p><%= row.body %></p>
+<% }; %>
+
+<p><a href="/create">Skapa nytt inlägg</a></p>
+
+<%- include("footer"); %>
